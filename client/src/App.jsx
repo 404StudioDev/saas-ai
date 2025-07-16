@@ -13,6 +13,7 @@ import ReviewResume from './pages/ReviewResume'
 import Community from './pages/Community'
 import { useUser } from '@clerk/clerk-react'
 import { Toaster } from 'react-hot-toast'
+import RefreshLoader from './components/RefreshLoader'
 
 const App = () => {
   const { isLoaded } = useUser()
@@ -21,6 +22,7 @@ const App = () => {
 
   return (
     <div>
+      <RefreshLoader />
       <Toaster />
       <Routes>
         <Route path='/' element={<Home />} />
