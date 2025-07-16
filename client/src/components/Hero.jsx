@@ -16,15 +16,7 @@ const Hero = () => {
       {/* Heading */}
       <div className="text-center mb-6">
         <h1 className="text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold mx-auto leading-[1.2] relative overflow-hidden">
-          {/* Beautiful Moving Gradient Background */}
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-600 via-blue-500 via-cyan-400 to-pink-500 bg-[length:400%_400%] animate-gradient-flow blur-2xl opacity-60 scale-150" />
-          <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-400 via-violet-500 via-indigo-500 to-cyan-400 bg-[length:300%_300%] animate-gradient-wave blur-xl opacity-40 scale-125" style={{ animationDelay: '1s' }} />
-          <div className="absolute inset-0 bg-gradient-to-l from-rose-400 via-purple-500 via-blue-500 to-emerald-400 bg-[length:500%_500%] animate-gradient-pulse blur-3xl opacity-30 scale-175" style={{ animationDelay: '2s' }} />
-          
-          {/* Text with beautiful gradient */}
-          <span className="relative z-10 bg-gradient-to-r from-white via-purple-100 via-blue-100 to-white bg-clip-text text-transparent drop-shadow-2xl font-bold">
           Create amazing content <br /> with <span className="text-primary">AI tools</span>
-          </span>
         </h1>
         <p className="mt-4 max-w-xs sm:max-w-lg 2xl:max-w-xl m-auto max-sm:text-xs text-gray-400">
           Transform your content creation with our suite of premium AI tools. Write articles, generate images, and enhance your workflow.
