@@ -7,8 +7,11 @@ const Hero = () => {
 
   return (
     <div className="px-4 sm:px-20 xl:px-32 relative flex flex-col w-full justify-center bg-black text-white pt-24 pb-10">
-      {/* Animated Background */}
-      <div className="animated-gradient-bg" />
+      {/* Moving Gradient Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-blue-500/20 animate-pulse" />
+        <div className="moving-gradient-bg" />
+      </div>
 
       {/* Heading */}
       <div className="text-center mb-6">
