@@ -15,8 +15,15 @@ const Hero = () => {
 
       {/* Heading */}
       <div className="text-center mb-6">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold mx-auto leading-[1.2]">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold mx-auto leading-[1.2] relative">
+          {/* Sexy Gradient Highlight Behind Text */}
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-500/30 via-purple-600/40 to-blue-500/30 blur-xl transform scale-110 animate-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-500/20 via-violet-600/30 to-cyan-500/20 blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+          
+          {/* Text with relative positioning */}
+          <span className="relative z-10 bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
           Create amazing content <br /> with <span className="text-primary">AI tools</span>
+          </span>
         </h1>
         <p className="mt-4 max-w-xs sm:max-w-lg 2xl:max-w-xl m-auto max-sm:text-xs text-gray-400">
           Transform your content creation with our suite of premium AI tools. Write articles, generate images, and enhance your workflow.
