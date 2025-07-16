@@ -15,13 +15,14 @@ const Hero = () => {
 
       {/* Heading */}
       <div className="text-center mb-6">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold mx-auto leading-[1.2] relative">
-          {/* Sexy Gradient Highlight Behind Text */}
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-500/30 via-purple-600/40 to-blue-500/30 blur-xl transform scale-110 animate-pulse" />
-          <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-500/20 via-violet-600/30 to-cyan-500/20 blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <h1 className="text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold mx-auto leading-[1.2] relative overflow-hidden">
+          {/* Beautiful Moving Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-600 via-blue-500 via-cyan-400 to-pink-500 bg-[length:400%_400%] animate-gradient-flow blur-2xl opacity-60 scale-150" />
+          <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-400 via-violet-500 via-indigo-500 to-cyan-400 bg-[length:300%_300%] animate-gradient-wave blur-xl opacity-40 scale-125" style={{ animationDelay: '1s' }} />
+          <div className="absolute inset-0 bg-gradient-to-l from-rose-400 via-purple-500 via-blue-500 to-emerald-400 bg-[length:500%_500%] animate-gradient-pulse blur-3xl opacity-30 scale-175" style={{ animationDelay: '2s' }} />
           
-          {/* Text with relative positioning */}
-          <span className="relative z-10 bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
+          {/* Text with beautiful gradient */}
+          <span className="relative z-10 bg-gradient-to-r from-white via-purple-100 via-blue-100 to-white bg-clip-text text-transparent drop-shadow-2xl font-bold">
           Create amazing content <br /> with <span className="text-primary">AI tools</span>
           </span>
         </h1>
